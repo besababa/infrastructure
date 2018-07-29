@@ -6,6 +6,7 @@ services:
       - 27017:27017
     volumes:
       - $PWD/data/mongo:/data/db
+    command: ["mongod", "--auth"]
   backend:
     image: besababa/backend
     restart: always
