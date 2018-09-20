@@ -35,6 +35,8 @@ services:
     - MYSQL_DATABASE=besababa
     ports:
     - "127.0.0.1:3306:3306"
+    volumes:
+      - /root/mysql:/var/lib/mysql
   adminer:
     image: adminer
     links:
