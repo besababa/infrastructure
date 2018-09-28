@@ -1,7 +1,7 @@
 version: '2'
 services:
   frontend:
-    image: besababa/frontend
+    image: registry.gitlab.com/besababa/frontend
     ports:
       - 127.0.0.1:3010:80
   nginx:
