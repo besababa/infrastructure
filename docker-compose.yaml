@@ -23,7 +23,7 @@ services:
     - database
     volumes:
       - $PWD/laravel/oauth-private.key:/var/www/storage/oauth-private.key:rw
-      - $PWD/laravel:/var/www/storage/oauth-public.key:rw
+      - $PWD/laravel/oauth-public.key:/var/www/storage/oauth-public.key:rw
     environment:
     - DB_USERNAME=${DB_USERNAME}
     - DB_PASSWORD=${DB_PASSWORD}
