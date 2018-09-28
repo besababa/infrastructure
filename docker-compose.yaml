@@ -16,7 +16,7 @@ services:
       - $PWD/nginx/nginx.conf:/etc/nginx/nginx.conf
       - /etc/letsencrypt:/etc/letsencrypt:ro
   server:
-    image: registry.gitlab/besababa/server
+    image: registry.gitlab.com/besababa/server
     ports:
     - 127.0.0.1:8080:80
     links:
