@@ -21,6 +21,9 @@ services:
     - 127.0.0.1:8080:80
     links:
     - database
+    volumes:
+      - $PWD/laravel/oauth-private.key:/var/www/storage/oauth-private.key:rw
+      - $PWD/laravel:/var/www/storage/oauth-public.key:rw
     environment:
     - DB_USERNAME=${DB_USERNAME}
     - DB_PASSWORD=${DB_PASSWORD}
