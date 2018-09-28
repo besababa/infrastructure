@@ -2,3 +2,4 @@
 data/
 deploy.sh
 certs/
+laravel/
